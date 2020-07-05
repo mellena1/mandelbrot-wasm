@@ -1,0 +1,18 @@
+kind: pipeline
+name: default
+
+steps:
+- name: Build-wasm
+  image: rust:1.44.1
+  steps:
+    - cargo install wasm-pack
+    - wasm-pack build --scope=mellena1
+
+- name: Publish-to-npm
+  image: plugins/npm
+  settings:
+    username: mellena1
+    password:
+      from_secret: npm_password
+    email: andrew.mellen7@gmail.com
+    folder: ./pkg
