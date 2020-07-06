@@ -4,7 +4,7 @@ name: default
 steps:
 - name: Build-wasm
   image: rust:1.44.1
-  steps:
+  commands:
     - cargo install wasm-pack
     - wasm-pack build --scope=mellena1
 
