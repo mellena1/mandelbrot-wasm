@@ -16,3 +16,4 @@ steps:
       from_secret: npm_password
     email: andrew.mellen7@gmail.com
     folder: ./pkg
+    access: public
