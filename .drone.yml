@@ -6,7 +6,11 @@ steps:
   image: rust:1.44.1
   commands:
     - cargo install wasm-pack
-    - wasm-pack build --scope=mellena1
+    - >
+      wasm-pack build
+      --scope=mellena1
+      --target=nodejs
+      --release
 
 - name: Publish-to-npm
   image: plugins/npm
