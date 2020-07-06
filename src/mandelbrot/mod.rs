@@ -5,7 +5,7 @@ const RE_MIN: f64 = -2.5;
 const RE_MAX: f64 = 1.0;
 const IM_MIN: f64 = -1.0;
 const IM_MAX: f64 = 1.0;
-const MAX_ITERATIONS: u64 = 5000;
+const MAX_ITERATIONS: u64 = 255;
 
 #[derive(Clone, Default, Copy)]
 pub struct Color{
