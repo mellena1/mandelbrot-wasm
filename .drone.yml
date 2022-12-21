@@ -4,7 +4,7 @@ name: default
 
 steps:
 - name: Build-wasm
-  image: rust:1.44.1
+  image: rust:1.66
   commands:
     - cargo install wasm-pack
     - >
