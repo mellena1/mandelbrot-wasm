@@ -17,8 +17,8 @@ steps:
   image: plugins/npm
   settings:
     username: mellena1
-    password:
-      from_secret: npm_password
+    token:
+      from_secret: npm_token
     email: andrew.mellen7@gmail.com
     folder: ./pkg
     access: public
